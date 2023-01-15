@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Digital Clock</title>
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+
+<body>
+  <section class="wrapper">
+    <div class="balls">
+      <div class="ball-1"></div>
+      <div class="ball-2"></div>
+      <div class="ball-3"></div>
+    </div>
+
+    <div class="clouds">
+      <img
+        src="images/cloud.png"
+        alt="cloud-1"
+      >
+      <img
+        src="images/cloud.png"
+        alt="cloud-2"
+      >
+      <img
+        src="images/cloud.png"
+        alt="cloud-3"
+      >
+    </div>
+
+    <section class="container">
+      <div class="container-inner">
+        <div class="date-inner">
+          <span
+            id="date"
+            class="date"
+          ></span>
+        </div>
+
+        <div
+          class="time active"
+          id="time"
+        >
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+          <span id="session">AM</span>
+        </div>
+
+        <div
+          class="analog"
+          id="analog"
+        >
+          <div class="clock">
+            <div class="hour">
+              <div
+                class="hr"
+                id="hr"
+              ></div>
+            </div>
+
+            <div class="min">
+              <div
+                class="mn"
+                id="mn"
+              ></div>
+            </div>
+
+            <div class="sec">
+              <div
+                class="sc"
+                id="sc"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="toggle">
+          <div class="toggle-inner">
+            <span class="toggle-button"></span>
+          </div>
+          <span class="text">Switch to analog</span>
+        </div>
+      </div>
+
+
+    </section>
+  </section>
+  <script src="app.js"></script>
+</body>
+
+</html>
