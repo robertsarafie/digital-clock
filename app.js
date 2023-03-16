@@ -1,8 +1,8 @@
 function getDate() {
-  var date = new Date();
-  var day = date.getDate();
-  var dayName = date.getDay();
-  var dayList = [
+  const date = new Date();
+  const day = date.getDate();
+  const dayName = date.getDay();
+  const dayList = [
     'Sunday',
     'Monday',
     'Tuesday',
@@ -11,7 +11,7 @@ function getDate() {
     'Friday',
     'Saturday',
   ];
-  var monthList = [
+  const monthList = [
     '',
     'January',
     'February',
@@ -26,8 +26,8 @@ function getDate() {
     'November',
     'December',
   ];
-  var month = date.getMonth() + 1;
-  var year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
 
   document.getElementById(
     'date',
@@ -36,11 +36,11 @@ function getDate() {
 setInterval(getDate, 10);
 
 function getTime() {
-  var date = new Date();
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var seconds = date.getSeconds();
-  var session = document.getElementById('session');
+  const date = new Date();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  const session = document.getElementById('session');
 
   if (hours >= 12) {
     session.innerHTML = 'PM';
